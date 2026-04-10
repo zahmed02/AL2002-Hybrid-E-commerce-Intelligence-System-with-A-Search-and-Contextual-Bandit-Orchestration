@@ -3,7 +3,7 @@
 ## Description
 An intelligent e-commerce recommendation system that combines A* search for efficient product navigation with machine learning models for personalization. A contextual bandit (simplified reinforcement learning) orchestrates between collaborative filtering (KNN) and purchase prediction (Random Forest) to adaptively recommend products based on user segments identified through unsupervised clustering.
 
-## Project Components & Paradigms
+## Computational Paradigm
 
 | Component | Algorithm | Learning Paradigm | Purpose |
 |-----------|-----------|-------------------|---------|
@@ -11,7 +11,8 @@ An intelligent e-commerce recommendation system that combines A* search for effi
 | User Segmentation | K-Means | Unsupervised | Group users into personas |
 | Collaborative Filtering | KNN | Instance-Based | Recommend based on similar users |
 | Purchase Prediction | Random Forest | Supervised (Classification) | Predict buy probability |
-| Strategy Orchestration | Contextual Bandit | Reinforcement (Simplified) | Choose best recommendation method |
+| Strategy Orchestration | Contextual Bandit | Reinforcement Learning | Choose best recommendation method |
+| Data Preprocessing | Pandas / NumPy | Data Engineering | Clean and transform dataset |
 
 ## Dataset
 - **Source:** RetailRocket Dataset (Kaggle)
