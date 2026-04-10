@@ -1,9 +1,7 @@
 # Hybrid E-commerce Intelligence System with A* Search and Contextual Bandit Orchestration
 
-**Course Name:** AL2002 Artificial Intelligence/Machine Learning
-
-## Project Description
-This project builds an intelligent e-commerce recommendation system that combines A* search for efficient product navigation with unsupervised clustering, supervised Random Forest prediction, and a Contextual Bandit (simplified RL) to dynamically choose between KNN collaborative filtering and ML-based recommendations. The system segments users via K-Means, predicts purchase probabilities, and optimizes click-through rates without using deep learning or neural networks.
+## Description
+intelligent e-commerce recommendation system that uses A* search to efficiently navigate product categories and find relevant items. It combines unsupervised clustering (K-Means), collaborative filtering (KNN), and a Random Forest classifier for purchase prediction, while a Contextual Bandit (simplified reinforcement learning) dynamically decides which recommendation strategy to show each user for maximum engagement.
 
 ## Project Components
 
