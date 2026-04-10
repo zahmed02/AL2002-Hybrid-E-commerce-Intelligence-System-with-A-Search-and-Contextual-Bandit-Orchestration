@@ -3,27 +3,15 @@
 ## Description
 An intelligent e-commerce recommendation system that combines A* search for efficient product navigation with machine learning models for personalization. A contextual bandit (simplified reinforcement learning) orchestrates between collaborative filtering (KNN) and purchase prediction (Random Forest) to adaptively recommend products based on user segments identified through unsupervised clustering.
 
-## Project Components
+## Project Components & Paradigms
 
-| Component | Technology / Algorithm | Purpose |
-|-----------|----------------------|---------|
-| Informed Search | A* Algorithm | Find optimal product path from category to target item using heuristic based on purchase probability |
-| User Segmentation | K-Means Clustering | Group users into personas (e.g., bargain hunters, impulse buyers) |
-| Collaborative Filtering | K-Nearest Neighbors (KNN) | Generate "users who liked this also liked" recommendations |
-| Purchase Prediction | Random Forest Classifier | Predict probability of user buying a specific product |
-| Strategy Orchestration | Contextual Bandit (LinUCB) | Decide whether to show KNN or Random Forest recommendations to maximize engagement |
-| Data Processing | Pandas, NumPy | Clean and transform RetailRocket e-commerce dataset |
-| Evaluation | Scikit-learn, Matplotlib | Measure silhouette score, F1-score, cumulative regret, and CTR |
-
-## Learning Types
-
-| Component | Type of Learning | Algorithm/Method | Purpose |
-|-----------|-----------------|------------------|---------|
-| Product Path Finding | Informed Search | A* Search | Find optimal path from category to target product using heuristic function |
-| User Segmentation | Unsupervised Learning | K-Means Clustering | Group users into personas based on browsing/purchase behavior |
-| Collaborative Filtering | Instance-Based Learning | K-Nearest Neighbors (KNN) | Recommend items liked by similar users |
-| Purchase Prediction | Supervised Learning (Classification) | Random Forest | Predict probability a user will buy a specific item |
-| Strategy Orchestration | Reinforcement Learning (Simplified) | Contextual Bandit (LinUCB) | Decide which recommendation method to show to maximize engagement |
+| Component | Algorithm | Learning Paradigm | Purpose |
+|-----------|-----------|-------------------|---------|
+| Product Path Finding | A* Search | Informed Search | Find optimal product category path |
+| User Segmentation | K-Means | Unsupervised | Group users into personas |
+| Collaborative Filtering | KNN | Instance-Based | Recommend based on similar users |
+| Purchase Prediction | Random Forest | Supervised (Classification) | Predict buy probability |
+| Strategy Orchestration | Contextual Bandit | Reinforcement (Simplified) | Choose best recommendation method |
 
 ## Dataset
 - **Source:** RetailRocket Dataset (Kaggle)
